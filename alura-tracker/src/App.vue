@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 import BarraLateral from './components/BarraLateral.vue'
 import FormularioTarefa from './components/FormularioTarefa.vue'
 import TarefaFeita from './components/TarefaFeita.vue'

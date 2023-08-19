@@ -42,16 +42,16 @@ export default defineComponent({
         iniciar() {
             //começar contagem
             //1s = 1000ms
+            this.cronometroRodando = true;
             this.cronometro = setInterval(() => {
                 this.tempoEmSegundos += 1
             }, 1000);
-            this.cronometroRodando = true;
 
         },
 
         finalizar() {
-            clearInterval(this.cronometro);
             this.cronometroRodando = false;
+            clearInterval(this.cronometro);
 
             this.$emit("aoTemporizadorFinalizado", this.tempoEmSegundos);
             this.tempoEmSegundos = 0;

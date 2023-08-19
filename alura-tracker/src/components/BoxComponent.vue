@@ -1,8 +1,6 @@
 <template>
     <div class="box-has-text-weigth-bold" :style="estilos"></div>
-    <slot>
-
-    </slot>
+    <slot> </slot>
 </template>
 
 <script lang="ts" >
